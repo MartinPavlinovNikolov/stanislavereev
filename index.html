@@ -470,72 +470,72 @@
       </section>
 
       <section id="about-stanislav-ereev" class="col-xs-12 col-sm-8 text-center">
-        <h3 class="mt-5">About S&A</h3>
-        <p class="pt-2 text-left">
+        <h3 class="mt-5 uncopyable">About S&A</h3>
+        <p class="pt-2 text-left uncopyable">
         Stan is a highly experienced Hair Transplantation Technician with over eight years of experience in hair
         restoration industry in UK.He has been working alongside high profile surgeons in the field and has obtained a detailed knowledge in the aspects of hair loss solutions. Inspired from above, Stan established S&A and became a fully trained and certified Scalp micropigmentation practitioner.
         </p>
       </section>
 
       <section id="what-is-SMP" class="col-xs-12 col-sm-8 text-left">
-        <h3 class="text-center">About SMP</h3>
-        <p class="pt-2">
+        <h3 class="text-center uncopyable">About SMP</h3>
+        <p class="pt-2 uncopyable">
         Scalp Micropigmentation is safe, non-surgical and non-invasive treatment, which is affordable solution for restoring confidence in both male and female individuals who suffer from hair loss.
         </p>
-        <p>
+        <p class="uncopyable">
         Micro pigmentation involves no down time and there is very little or no pain felt during the treatment. It is possible the appearance of a mild skin redness, which however should settle within a few hours following the treatment.
         </p>
-        <p>
+        <p class="uncopyable">
         We offer free of charge initial consultation in order to gain an understanding of what is the desired result from the treatment. The patients will be guided through the process with professional advice to match their expectations.
         </p>
-        <p>
+        <p class="uncopyable">
         The treatment typically requires three sessions. Each session lasts between 1 to 4 hours, depending on the area treated.
         </p>
-        <p>
+        <p class="uncopyable">
         SMP can be a great option in dealig with any sort of scars, including those from previous hair transplantation surgery.
         </p>
       </section>
 
       <section id="pricing" class="col-xs-12 col-sm-8 text-center exaples-container">
-        <h3 class="mt-5">What is the cost for this treatment?</h3>
-        <p>The main factor for the price is the volume of area needed to be treated</p>
-        <p>You can see the examples below.</p>
+        <h3 class="mt-5 uncopyable">What is the cost for this treatment?</h3>
+        <p class="uncopyable">The main factor for the price is the volume of area needed to be treated</p>
+        <p class="uncopyable">You can see the examples below.</p>
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-6 text-center mt-5">
               <div class="examples-img-container">
-                <h4 class="mt-2">Starting from 450£*</h4>
+                <h4 class="mt-2 uncopyable">Starting from 450£*</h4>
                 <div>
                   <img src="./examples/1.png" alt="1a">
-                  <p class="mt-1">*Approximate price</p>
+                  <p class="mt-1 uncopyable">*Approximate price</p>
                 </div>
               </div>
             </div>
             <div class="col-sm-12 col-md-6 text-center mt-5">
               <div class="examples-img-container">
-                <h4 class="mt-2">Starting from 750£*</h4>
+                <h4 class="mt-2 uncopyable">Starting from 750£*</h4>
                 <div>
                   <img src="./examples/2.png" alt="1a">
                 </div>
-                  <p class="mt-1">*Approximate price</p>
+                  <p class="mt-1 uncopyable">*Approximate price</p>
               </div>
             </div>
             <div class="col-sm-12 col-md-6 text-center mt-5">
               <div class="examples-img-container">
-                <h4 class="mt-2">Starting from 1100£*</h4>
+                <h4 class="mt-2 uncopyable">Starting from 1100£*</h4>
                 <div>
                   <img src="./examples/3.png" alt="1a">
                 </div>
-                  <p class="mt-1">*Approximate price</p>
+                  <p class="mt-1 uncopyable">*Approximate price</p>
               </div>
             </div>
             <div class="col-sm-12 col-md-6 text-center mt-5">
               <div class="examples-img-container">
-                <h4 class="mt-2">Starting from 1350£*</h4>
+                <h4 class="mt-2 uncopyable">Starting from 1350£*</h4>
                 <div>
                   <img src="./examples/4.png" alt="1a">
                 </div>
-                  <p class="mt-1">*Approximate price</p>
+                  <p class="mt-1 uncopyable">*Approximate price</p>
               </div>
             </div>
           </div>
@@ -562,6 +562,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
     <script>
+
+      $('.uncopyable').on('copy paste cut drag drop', function (e) {
+        e.preventDefault();
+      });
 
       (function($){
 
