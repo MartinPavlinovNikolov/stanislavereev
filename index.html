@@ -167,6 +167,33 @@
       height: auto;
     }
 
+    .exaples-container .img-heads-1, .exaples-container .img-heads-2, .exaples-container .img-heads-3, .exaples-container .img-heads-4 {
+      display: inline-block;
+      margin: 0 auto;
+      width: 50% !important;
+      height: 44vw;
+      background: url('./examples/sprite_heads.png');
+      background-size: 100% 455%;
+      background-repeat: no-repeat;
+      overflow: hidden;
+    }
+
+    .exaples-container .img-heads-1 {
+      background-position: 0 0;
+    }
+
+    .exaples-container .img-heads-2 {
+      background-position: 0 28.5%;
+    }
+
+    .exaples-container .img-heads-3 {
+      background-position: 0 57%;
+    }
+
+    .exaples-container .img-heads-4 {
+      background-position: 0 85.5%;
+    }
+
     .examples-img-container {
       padding-bottom: .2rem !important;
       min-height: 100%;
@@ -291,6 +318,12 @@
         margin-left: 3rem;
         margin-right: 3rem;
       }
+
+      .exaples-container .img-heads-1, .exaples-container .img-heads-2, .exaples-container .img-heads-3, .exaples-container .img-heads-4 {
+        width: 55% !important;
+        height: 36vw;
+      }
+
       footer li {
         font-size: .6rem;
       }
@@ -327,6 +360,12 @@
         margin-left: 5rem;
         margin-right: 5rem;
       }
+      
+      .exaples-container .img-heads-1, .exaples-container .img-heads-2, .exaples-container .img-heads-3, .exaples-container .img-heads-4 {
+        width: 50% !important;
+        height: 17vw;
+      }
+
       footer li {
         font-size: .8rem;
       }
@@ -506,7 +545,7 @@
               <div class="examples-img-container">
                 <h4 class="mt-2 uncopyable">Starting from 450£*</h4>
                 <div>
-                  <img src="./examples/1.png" alt="1a">
+                  <div class="img-heads-1"></div>
                   <p class="mt-1 uncopyable">*Approximate price</p>
                 </div>
               </div>
@@ -515,7 +554,7 @@
               <div class="examples-img-container">
                 <h4 class="mt-2 uncopyable">Starting from 750£*</h4>
                 <div>
-                  <img src="./examples/2.png" alt="1a">
+                  <div class="img-heads-2"></div>
                 </div>
                   <p class="mt-1 uncopyable">*Approximate price</p>
               </div>
@@ -524,7 +563,7 @@
               <div class="examples-img-container">
                 <h4 class="mt-2 uncopyable">Starting from 1100£*</h4>
                 <div>
-                  <img src="./examples/3.png" alt="1a">
+                  <div class="img-heads-3"></div>
                 </div>
                   <p class="mt-1 uncopyable">*Approximate price</p>
               </div>
@@ -533,7 +572,7 @@
               <div class="examples-img-container">
                 <h4 class="mt-2 uncopyable">Starting from 1350£*</h4>
                 <div>
-                  <img src="./examples/4.png" alt="1a">
+                  <div class="img-heads-4"></div>
                 </div>
                   <p class="mt-1 uncopyable">*Approximate price</p>
               </div>
