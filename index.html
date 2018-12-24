@@ -89,7 +89,7 @@
 
     #stanislav-image-container {
       position: relative;
-      margin-top: 7rem;
+      margin-top: 157px;
       background: #ccc;
       height: 70vw;
       z-index: -1;
@@ -107,20 +107,23 @@
     }
 
     #promotions {
-      position: absolute;
-      top: 60%;
-      left: 0%;
+      position: fixed;
+      margin-top: 7.8rem;
       width: 100%;
-      margin: 0;
-      padding: 0;
-      font-size: 2.2rem;
+      height: 2rem;
+      background-color: #ccccff;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
       overflow: hidden;
+      z-index: 999;
     }
     #promotions-text {
       font-style: italic;
+      font-size: 1rem;
       text-shadow: 0 0 .3rem #000;
       min-width: 430%;
-      margin-left: 100%;
+      margin-left: 120%;
+      padding-top: .4rem;
       color: #fff;
     }
 
@@ -208,9 +211,10 @@
         font-size: 1rem;
         margin-right: 2rem;
       }
+
       #contacts {
         position: fixed;
-        top: 76px;
+        top: 127px;
         left: 66.5vw;
         width: 33.5vw;
         height: 28vw;
@@ -273,24 +277,22 @@
         left: 0;
         top: 0;
         height: 28vw;
-        margin-top: 80px;
+        margin-top: 127px;
         background: #ccc;
         clip-path: polygon(0 0, 66% 0, 59% 100%, 0 100%);
         z-index: -1;
       }
 
       #promotions {
-        left: 10%;
-        width: 45vw;
-        font-size: 3.4rem;
+        margin-top: 5rem;
+        height: 3rem;
       }
       #promotions-text {
-        min-width: 300%;
-        margin-left: 45vw;
+        font-size: 2rem;
       }
 
       #about-stanislav-ereev {
-        margin-top: calc(88px + 26vw);
+        margin-top: calc(138px + 26vw);
         background: #fff;
       }
       #what-is-SMP {
@@ -326,6 +328,16 @@
         font-size: 1.4rem;
         margin-right: 2rem;
       }
+
+      #contacts {
+        top: 137px;
+      }
+
+      #promotions {
+        margin-top: 5.6rem;
+        height: 3rem;
+      }
+
       #contacts ul {
         font-size: 1.6vw;
       }
@@ -335,9 +347,14 @@
         margin-right: 1rem;
       }
       #about-stanislav-ereev {
-        margin-top: calc(88px + 26vw);
+        margin-top: calc(150px + 26vw);
         background: #fff;
       }
+
+      #stanislav-image-container {
+        margin-top: 137px;
+      }
+
       #what-is-SMP p, #about-stanislav-ereev p {
         margin-top: 2rem;
         margin-left: 3rem;
@@ -370,6 +387,7 @@
         width: 100%;
         height: 5vw;
       }
+
       #contacts h2 {
         font-size: 2.6vw;
         padding-top: 5vw;
@@ -379,7 +397,7 @@
       }
 
       #about-stanislav-ereev {
-        margin-top: calc(88px + 26vw);
+        margin-top: calc(157px + 26vw);
         background: #fff;
       }
       #what-is-SMP p, #about-stanislav-ereev p {
@@ -407,17 +425,6 @@
         font-size: 1.6rem;
         margin-right: 2rem;
       }
-      #contacts {
-        position: fixed;
-        top: 66px;
-        left: 66.5vw;
-        width: 33.5vw;
-        height: 28vw;
-        margin: 0;
-        padding: 0;
-        background-color: #fff;
-        z-index: 10;
-      }
       #contacts h2 {
         font-size: 2.6vw;
         padding-top: 5vw;
@@ -437,7 +444,7 @@
         text-decoration: none;
       }
       #about-stanislav-ereev {
-        margin-top: calc(88px + 26vw);
+        margin-top: calc(168px + 26vw);
         background: #fff;
       }
       #what-is-SMP p, #about-stanislav-ereev p {
@@ -462,7 +469,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
+  
     <div class="collapse navbar-collapse mr-5" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
@@ -481,6 +488,10 @@
   <div class="container-fluid">
     <main class="row">
 
+      <section id="promotions" class="col-xs-12 col-sm-12">
+        <div id="promotions-text">Book a consultation by the end of December to get amazing Christmas deal!</div>
+      </section>
+
       <section id="contacts" class="col-xs-12 col-sm-12 text-center">
         <h2>Contact Stan today</h2>
         <ul>
@@ -492,9 +503,6 @@
 
       <section id="stanislav-image-container" class="col-xs-12 col-sm-12">
         <img id="stanislav-image" src="./stanislav.png" alt="stanislav image">
-        <div id="promotions">
-          <div id="promotions-text">Book a consultation by the end of December to get amazing Christmas deal!</div>
-        </div>
       </section>
 
       <section id="about-stanislav-ereev" class="col-xs-12 col-sm-8 text-center">
@@ -569,8 +577,8 @@
           </div>
         </div>
       </section>
-
-      <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2402.6384363366483!2d-1.1536616844335479!3d52.97291837990245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879c19e34132c61%3A0xb653fa256009363b!2s354+Mansfield+Rd%2C+Nottingham+NG5+2EF%2C+UK!5e0!3m2!1sen!2sbg!4v1542544429072" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<!-- 
+      <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2402.6384363366483!2d-1.1536616844335479!3d52.97291837990245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879c19e34132c61%3A0xb653fa256009363b!2s354+Mansfield+Rd%2C+Nottingham+NG5+2EF%2C+UK!5e0!3m2!1sen!2sbg!4v1542544429072" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 
     </main>
 
@@ -618,6 +626,17 @@
 
       const promo = $('#promotions-text');
       const baseMarginLeft = parseInt(promo.css('margin-left').toString().replace('px', ''));
+      let timeDependOnWindowWidth;
+
+      if(window.outerWidth < 500){
+        timeDependOnWindowWidth = 11000;
+      }
+      else if(timeDependOnWindowWidth < 900){
+        timeDependOnWindowWidth = 22000;
+      }
+      else{
+        timeDependOnWindowWidth = 27000;
+      }
 
       function startOverPromoting($target){
         $($target).css({'marginLeft': baseMarginLeft});
@@ -625,10 +644,10 @@
       }
 
       function movePromoToLeft($target){
-        let movement = $target.width() + baseMarginLeft;
+        let movement = $target.width();
         $target.animate({
           'marginLeft': '-=' + movement + 'px'
-        }, 12000, "linear", function(){
+        }, timeDependOnWindowWidth, "linear", function(){
           startOverPromoting(this);
         });
       }
@@ -660,6 +679,7 @@
       }
       
     });
+    
   </script>
 </body>
 </html>
